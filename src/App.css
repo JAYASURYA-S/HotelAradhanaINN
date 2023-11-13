@@ -1,38 +1,38 @@
-.App {
-  text-align: center;
+.carousel-item
+{
+  height: 70vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.carousel-image
+{
+   height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 80vh;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar
+{
+    display: flex;
+    background-color: transparent; 
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    /* font-size: 4rem; */
+    font-weight: 500;
+}
+
+.booknowbtn
+{
+  background-color: rgb(224, 158, 81);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.booknowbtn:hover{
+  background-color: rgb(224, 158, 81);
+  color: white;
 }
