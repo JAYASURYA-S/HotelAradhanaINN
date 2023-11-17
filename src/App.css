@@ -16,6 +16,19 @@
     font-weight: 500;
 }
 
+.navbar-toggler,
+.navbar-toggler-icon
+{
+  background-color: white;
+  outline: none;
+}
+
+.navbar-nav .nav-item a
+{
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+}
 
 
 .booknowbtn
@@ -111,7 +124,7 @@
   font-weight: 400;
 }
 
-.yercaudCard
+.yercaudCardContainer
 {
   width: 1250px;
 }
@@ -149,6 +162,175 @@
   background-color: rgba(0,0,0,0.4);
   width: 100%;
   color: white;
+}
+
+.aradhanainnimg :nth-child(1)
+{
+  width: 310px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.aradhanainnimg :nth-child(2)
+{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.aradhanainncontent
+{
+  font-size: 18px;
+  font-weight: 400;
+  width: 450px;
+  text-align: justify;
+  text-justify: distribute-all-lines;
+}
+
+.averagereview
+{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.averagereview span
+{
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.footer
+{
+  background-color: #c8b5944d;
+  padding: 2rem;
+  padding-bottom: 7rem;
+}
+
+.footerlist
+{
+  font-size: 20px;
+}
+
+.footerlist a
+{
+  text-decoration: none;
+  color: black;
+}
+
+.footerfirst
+{
+  gap: 5rem;
+}
+
+.footeraddress a
+{
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+
+.footeraddress :nth-child(3),
+.footeraddress :nth-child(4)
+{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footeraddress :nth-child(5)
+{
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.form
+{
+  width: 50%;
+}
+
+.form :nth-child(2) input,textarea
+{
+  padding: 7px;
+  border-radius: 7px;
+  outline: none;
+}
+
+
+.form :nth-child(2) input:focus,textarea:focus
+{
+  border-color: rgb(164 202 254);
+}
+
+.form button
+{
+  width: 120px;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 0 auto;
+  color: white;
+  background-color: rgb(208 174 113);
+  border: none;
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1);
+}
+
+.reviewbox
+{
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);
+}
+
+
+
+.eventheader img
+{
+  width: 100%;
+  object-fit: cover;
+  height: 270px;
+  filter:brightness(60%);
+}
+
+.restaurantcarousel
+{
+  border-radius: 9px;
+  overflow: hidden;
+  width: 92%;
+  height: 500px;
+}
+
+.restaurantcarousel img
+{
+  height: 500px;
+  border-radius: 9px;
+}
+
+.gardenrestaurant h3
+{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.gardenrestaurant p
+{
+  text-align: start;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.finedining h3
+{
+  font-size: 40px;
+}
+
+.finedining p
+{
+  text-align: center;
+  font-size: 20px;
+  max-width: 1000px;
+  padding-top: 5px;
+  margin-bottom: 500px;
 }
 
 /* .card
@@ -200,18 +382,44 @@
     height: 700px;
   }
   
+
+  .navbar-collapse
+{
+  background-color: #ffffff;
+  z-index: 2;
+}
+
+.navbar-nav .nav-item a
+{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+}
+
+
 .conventionhall
 {
   width: 100%;
 }
 
+
+
   .restaurantakshaya h3
   {
     font-size: 25px;
   }
+
+  .restaurantakshaya
+  {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+
   .restaurantakshayacard
   {
-    width: 280px;
+    width: 70%;
     text-align: center;
     margin: 0 auto;
   }
@@ -221,13 +429,17 @@
     font-size: 18px;
     padding: 0 auto;
   }
-  .yercaudCard
+  .yercaudCardContainer
   {
-    width: 280px;
+    width: 100%;
     margin: 0 auto;
-    height: 700px;
   }
  
+  .yercaudcard
+  {
+    width: 70%;
+    margin: 0 auto;
+  }
   .aboutYercaud h5
   {
     font-size: 18px;
@@ -248,20 +460,178 @@
     font-size: 22px;
     font-weight: 500;
   }
-  .aboutplaces
-  {
-    width: auto;
-  }
+
   .aboutplaces
   {
     margin: 0 auto;
-    width: 250px;
+    width: 70%;
     height: 350px;
   }
   .aboutplaces img
   {
     height: 350px;
   }
+
+  .aradhanainnimg
+  {
+    width: 100%;
+    margin: 0 auto;
+    gap: 50px;
+  }
+  .aradhanainnimg :nth-child(1),
+  .aradhanainnimg :nth-child(2)
+  {
+    margin: 0 auto;
+    width: 75%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .aradhanainncontent
+  {
+    font-size: 16px;
+    font-weight: 400;
+    width: 70%;
+    margin: 0 auto;
+    text-align: justify;
+    text-justify: distribute-all-lines;
+  }
+
+  .yatraicon
+  {
+    margin: 0 auto;
+  }
+
+
+  .averagereview
+{
+  font-size: 18px;
+  width: 100%;
+  font-weight: 400;
+}
+
+  .footerlist
+  {
+    font-size: 19px;
+  }
+
+  .footeraddress :nth-child(1),
+  .footeraddress :nth-child(2),
+  .footeraddress :nth-child(3),
+  .footeraddress :nth-child(4),
+  .footeraddress :nth-child(5)
+  {
+    font-size: 17px;
+  }
+
+  .form
+  {
+    width: 100%;
+  }
+  .reviewbox
+  {
+    margin: auto;
+  }
+
+  .eventheader img
+{
+  width: 100%;
+  object-fit: cover;
+  height: 400px;
+  filter:brightness(60%);
+}
+
+.eventheader :nth-child(2) h3
+{
+  font-size: 40px !important;
+  margin-top: 70px;
+}
+
+.restaurantheader
+{
+  height: 60vh !important;
+}
+
+.restaurantheader :nth-child(2) h3
+{
+  margin-top: 20px !important;
+}
+
+.restaurantheader :nth-child(2) h3 
+{
+  font-size: 40px !important;
+} 
+
+.restaurantheader :nth-child(2) p
+{
+  font-size: 25px !important;
+} 
+
+.conventionhallheader :nth-child(2) h3
+{
+  font-size: 38px !important;
+}
+
+.conventionhallheader :nth-child(2) p
+{
+  font-size: 25px !important;
+}
+
+
+.restaurantcarousel
+{
+  width: 80%;
+  height: 300px;
+  margin: 0 auto;
+  /* border: 3px solid; */
+}
+
+.restaurantcarousel img
+{
+  height: 300px;
+  border-radius: 9px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon
+{
+  position: absolute !important;
+  top: 30% !important;
+}
+
+.gardenrestaurant h3
+{
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.gardenrestaurant p
+{
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.finedining h3
+{
+  font-size: 32px;
+}
+
+.finedining p
+{
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+  font-size: 19px;
+  margin-top: 200px;
+  margin-bottom: 20px;
+}
+
+
 }
 
 @media (max-width: 768px) {

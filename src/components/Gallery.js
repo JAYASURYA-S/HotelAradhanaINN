@@ -2,182 +2,87 @@ import React from "react";
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Card, Carousel } from "react-bootstrap";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const Gallery = () => {
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
-
-  const nextCard = () => {
-    setIndex((prevIndex) => (prevIndex + 1) % 3); // Adjust the number of cards accordingly
-  };
-
-  const prevCard = () => {
-    setIndex((prevIndex) => (prevIndex - 1 + 3) % 3); // Adjust the number of cards accordingly
-  };
-
   return (
     <>
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, labore
-          non. Sint cum minima similique excepturi rem commodi at reiciendis
-          eum? Enim ut animi a, neque eos soluta totam rem culpa deserunt
-          reprehenderit earum nisi repudiandae iste consectetur tempora
-          exercitationem porro voluptatum qui. Nulla eveniet est iure magnam
-          beatae tempore obcaecati deserunt suscipit adipisci, quos molestiae
-          unde doloremque nam, explicabo quibusdam! Non unde reiciendis
-          voluptates earum quo aut excepturi eos fuga ducimus impedit.
-          Aspernatur deserunt vel tempore totam amet tenetur. Sunt incidunt
-          minus ullam deserunt repellendus commodi accusamus ex, veniam ab, eos
-          eaque consequuntur tenetur necessitatibus voluptatibus nihil iusto
-          libero.
-        </p>
-        <div className="position-relative">
-          <div>
-          <h3>Our Rooms</h3>
-          <p>Comfy and Luxury rooms for all your needs</p>
-          </div>
-          <div className="position-absolute top-0 end-0 me-3">
-            <button className="slidebtn">
-              <i className="fa fa-thin fa-arrow-left"></i>
-            </button>
-            <button className="slidebtn">
-              <i className="fa fa-thin fa-arrow-right"></i>
-            </button>
-          </div>
-        </div>
-        {/* <div className="card-group">
-          <div className="card">
-            <img
-              src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F2f3413618ad1e3d8c9a187ab01fe5468b1777235-5616x3744.jpg&w=640&q=75"
-              className="card-img-top"
-              alt="..."
-            />
-            <div className="card-body position-absolute bottom-0 bg-secondary w-100 text-white bg-opacity-25">
-              <p className="card-text fw-bold">
-                Villas <br />
-                <span className="fw-light">6 People</span>
-              </p>
-            </div>
-          </div>
-          <div className="card">
-            <img
-              src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F64219cd5f1f554d95e30427536700303e6520059-5472x3648.jpg&w=640&q=75"
-              className="card-img-top"
-              alt="..."
-            />
-            <div className="card-body position-absolute bottom-0 bg-secondary w-100 text-white bg-opacity-25">
-              <p className="card-text fw-bold">
-                Suite Room <br />
-                <span className="fw-light">2 People</span>
-              </p>
-            </div>
-          </div>
-          <div className="card">
-            <img
-              src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F7a7c75bce14b8cb942a951b73d6f1b37581aee51-1024x683.jpg&w=640&q=75"
-              className="card-img-top"
-              alt="..."
-            />
-            <div className="card-body position-absolute bottom-0 bg-secondary w-100 text-white bg-opacity-25">
-              <p className="card-text fw-bold">
-                Deluxe with Balcony Room <br />
-                <span className="fw-light">2 People</span>
-              </p>
-            </div>
-          </div>
-          <div className="card">
-            <img
-              src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F825ec47f4e47ac800327e6108294a9580901d8bc-1280x853.jpg&w=640&q=75"
-              className="card-img-top"
-              alt="..."
-            />
-            <div className="card-body position-absolute bottom-0 bg-secondary w-100 text-white bg-opacity-25">
-              <p className="card-text fw-bold">
-                Deluxe Room <br />
-                <span className="fw-light">2 People</span>
-              </p>
-            </div>
-          </div>
-          <div className="card">
-            <img
-              src="https://www.hotelaradhanainn.in/_next/image?url=&w=640&q=75"
-              className="card-img-top"
-              alt="..."
-            />
-            <div className="card-body position-absolute bottom-0  bg-secondary w-100 text-white bg-opacity-25">
-              <p className="card-text fw-bold">
-                Normal Room <br />
-                <span className="fw-light">2 People</span>
-              </p>
-            </div>
-          </div>
-        </div> */}
-
-
-
-        <div className="row row-cols-5 row-cols-md-5 g-4">
-          <div className="col">
-            <div className="card">
-              <img src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F2f3413618ad1e3d8c9a187ab01fe5468b1777235-5616x3744.jpg&w=640&q=75" className="card-img-top" alt="..." />
-              <div className="card-body position-absolute bottom-0 bg-secondary w-100 text-white bg-opacity-25">
-              <p className="card-text fw-bold">
-                Villas <br />
-                <span className="fw-light">6 People</span>
-              </p>
-            </div>
-            </div>
-          </div>
-          <div className="col">
-            <div className="card">
-              <img src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F64219cd5f1f554d95e30427536700303e6520059-5472x3648.jpg&w=640&q=75" className="card-img-top" alt="..." />
-              <div className="card-body position-absolute bottom-0 bg-secondary w-100 text-white bg-opacity-25">
-              <p className="card-text fw-bold">
-              Suite Room <br />
-                <span className="fw-light">2 People</span>
-              </p>
-            </div>
-            </div>
-          </div>
-          <div className="col">
-            <div className="card">
-              <img src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F7a7c75bce14b8cb942a951b73d6f1b37581aee51-1024x683.jpg&w=640&q=75" className="card-img-top" alt="..." />
-              <div className="card-body position-absolute bottom-0 bg-secondary w-100 text-white bg-opacity-25">
-              <p className="card-text fw-bold">
-              Deluxe with Balcony Room <br />
-                <span className="fw-light">2 People</span>
-              </p>
-            </div>
-            </div>
-          </div>
-          <div className="col">
-            <div className="card">
-              <img src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F825ec47f4e47ac800327e6108294a9580901d8bc-1280x853.jpg&w=640&q=75" className="card-img-top" alt="..." />
-              <div className="card-body position-absolute bottom-0 bg-secondary w-100 text-white bg-opacity-25">
-              <p className="card-text fw-bold mb-3">
-              Deluxe Room <br />
-                <span className="fw-light">2 People</span>
-              </p>
-            </div>
-            </div>
-          </div>
-          <div className="col">
-            <div className="card">
-              <img src="https://www.hotelaradhanainn.in/_next/image?url=&w=640&q=75" className="card-img-top" alt="..." />
-              <div className="card-body position-absolute bottom-0 bg-secondary w-100 text-white bg-opacity-25">
-              <p className="card-text fw-bold">
-              Normal Room <br />
-                <span className="fw-light">2 People</span>
-              </p>
-            </div>
-            </div>
+      <div className="position-relative">
+        <div className="position-relative eventheader">
+          <img
+            src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F843db6d2981ecb6acb0c526496f4c3fecd042b84-2000x517.png&w=1920&q=75"
+            alt=""
+          />
+          <div
+            className="position-absolute top-0"
+            style={{ marginTop: "150px", marginLeft: "40px" }}
+          >
+            <h3 style={{ color: "white", fontWeight: "500", fontSize: "45px" }}>
+              Gallery
+            </h3>
           </div>
         </div>
 
-        
+        <div
+          className="d-flex justify-content-center align-items-center w-100"
+          style={{ padding: "0 3rem" }}
+        >
+          <div className="position-relative w-100 my-5">
+            <div className="d-flex align-items-center justify-content-between">
+              <h3>All Photos</h3>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-caret-down-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                </svg>
+              </div>
+            </div>
+
+            <div className="position-absolute top-5">
+                <div className="p-4">
+                    <p>All Photos</p>
+                </div>
+                <div className="p-4">
+                    <p>Accomodation</p>
+                </div>
+                <div className="p-4">
+                    <p>Dining</p>
+                </div>
+                <div className="p-4">
+                    <p>Convention Hall</p>
+                </div>
+                <div className="p-4">
+                    <p>Experiences</p>
+                </div>
+            </div>
+          </div>
+
+          <div className="w-100 h-100">
+            <div className="row">
+                <div className="col-1 col-md-2 col-lg-3 position-relative">
+                    <img src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F762319acdd68a3e1f9d7e3d59acb719d93b388a4-5616x3744.jpg&w=1200&q=75" className="position-absolute" alt="" style={{height:"100px",width:"100px"}}/>
+                </div>
+                <div className="col-1 col-md-2 col-lg-3">
+                    <img src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F762319acdd68a3e1f9d7e3d59acb719d93b388a4-5616x3744.jpg&w=1200&q=75" className="position-absolute" alt="" style={{height:"100px",width:"100px"}}/>
+                </div>
+                <div className="col-1 col-md-2 col-lg-3">
+                    <img src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F762319acdd68a3e1f9d7e3d59acb719d93b388a4-5616x3744.jpg&w=1200&q=75" className="position-absolute" alt="" style={{height:"100px",width:"100px"}}/>
+                </div>
+                <div className="col-1 col-md-2 col-lg-3">
+                    <img src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F762319acdd68a3e1f9d7e3d59acb719d93b388a4-5616x3744.jpg&w=1200&q=75" className="position-absolute" alt="" style={{height:"100px",width:"100px"}}/>
+                </div>
+            </div>
+          </div>
+        </div>
+        <Navbar />
+        <Footer />
       </div>
     </>
   );

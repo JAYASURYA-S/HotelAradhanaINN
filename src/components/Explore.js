@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Reviewform from './Reviewform'
 
 const Explore = () => {
 
@@ -18,7 +19,7 @@ const Explore = () => {
 
   return (
     <>
-    <div className="d-flex flex-column yercaud mt-5">
+    <div className="d-flex flex-column yercaud mt-5 w-100">
           <h3
             className="text-center mb-5"
           >
@@ -32,11 +33,11 @@ const Explore = () => {
               <button onClick={()=>showPlaces()} style={{backgroundColor:"transparent",border:"none"}}><h5 className="ms-3">Nearby Places</h5></button>
             </div>
           </div>
-          <div className="d-flex flex-column yercaudCard mt-5 ms-md-5">
+          <div className="d-flex flex-column yercaudCardContainer mt-5 ms-md-5">
 
-            {aboutYercaud && <div className="d-flex flex-column flex-md-row justify-content-center " style={{overflow:"hidden"}}>
-              <div className="card position-relative mb-3" style={{borderRadius:"20px",overflow:"hidden"}}>
-                <div className="row g-0 ">
+            {aboutYercaud && <div className="d-flex flex-column w-100 flex-md-row justify-content-center " style={{overflow:"hidden"}}>
+              <div className="card yercaudcard position-relative mb-3" style={{borderRadius:"20px",overflow:"hidden"}}>
+                <div className="row g-0 w-100">
                   <div className="col-md-6 yercaudcardImg fade-out position-relative" >
                     <div className="w-100 h-100">
                     <img src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F00b9c57037c880e47ffc762abf1cb9c9b8b21510-1200x614.jpg&w=1200&q=75" className="img-fluid rounded-start w-100 h-100"  alt="..." />
@@ -46,7 +47,7 @@ const Explore = () => {
                         <h5>15min</h5>
                     </div>
                   </div>
-                  <div className="col-md-6 p-md-4 p-0" style={{height:"100%"}}>
+                  <div className="col-md-6 p-md-4 p-0" style={{}}>
                     <div className="card-body aboutYercaud">
                       <h5 className="card-title">About yercaud</h5>
                       <p className="card-text">
@@ -58,7 +59,7 @@ const Explore = () => {
               </div>
             </div>}
 
-            {nearbyPlaces && <div className='d-flex flex-wrap align-items-stretch gap-5'>
+            {nearbyPlaces && <div className='d-flex flex-wrap align-items-stretch gap-4 gap-md-5'>
                 <div className='position-relative aboutplaces'>
                     <div>
                         <img src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F00b9c57037c880e47ffc762abf1cb9c9b8b21510-1200x614.jpg&w=828&q=75" alt="" />
@@ -117,12 +118,47 @@ const Explore = () => {
                 </div>
             </div>}
 
-            <div>
-                <div></div>
-                <div></div>
+            <div className='d-flex flex-column flex-md-row justify-content-between align-items-md-start gap-md-5' style={{marginTop:"70px"}}>
+                <div className='d-flex flex-column gap-2 w-100 mx-md-0'>
+                    <div className='d-flex flex-column aradhanainncontent gap-2'>
+                        <h3>Hotel Aradhana Inn</h3>
+                        <p>Hotel Aradhana Inn, tucked amidst dense tall silver oak trees and lush greenery on a picturesque hill overlooking the Lake in Yercaud, a small coffee plantation town, atop the Shevaroyan Hills, is an ideal place to those looking for a quiet and cosy accommodation. Poised on a hill overlooking the Big Lake, it commands a stunning view of the Lake and the surrounding plantations that grace the mountains. Hotel Aradhana Inn offers a choice of accommodations to match your needs - whether you need an inviting room for your work travels or a spacious suite for a family getaway, or cosy rooms for an exciting group get together or comfortable rooms to organize a conference, our accommodations have you covered.</p>
+                    </div>
+
+                    <div className='d-flex flex-column yatraicon gap-4'>
+                        <div className='d-flex align-items-center gap-3'>
+                            <a href="https://www.yatra.com/hotels/hotels-in-yercaud/hotel-aradhana-inn">
+                                <img src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2Fc73e8bcf1de10521f1b4be783c18838f21b78318-773x407.png&w=64&q=75" alt="" />
+                            </a>
+                            <a href="https://www.makemytrip.com/hotels/hotel_aradhana_inn-details-yercaud.html">
+                                <img src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F07b09d1f51e9edd994ff4745ffb1c9a58d4d3c5d-50x50.png&w=64&q=75" alt="" />
+                            </a>
+                            <a href="https://www.booking.com/hotel/in/aradhana-inn.en-gb.html?aid=356980&label=gog235jc-1DCAsobEIMYXJhZGhhbmEtaW5uSDNYA2hsiAEBmAEJuAEYyAEM2AED6AEBiAIBqAIEuALo3cqoBsACAdICJDEzNjU0YTdkLWY1NjgtNGFjOS1iNDc5LTg5MjY4MThhMDI5Y9gCBOACAQ&sid=00afaa8013e14988700b66f7eed8cefd&dist=0&keep_landing=1&sb_price_type=total&type=total&">
+                                <img src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F0f01bdd93f22ee9d89dc0263ea18707d0b893398-52x50.png&w=64&q=75" alt="" />
+                            </a>
+                            <a href="https://www.goibibo.com/hotels/aradhana-inn-hotel-in-yercaud-1904012113122390023/">
+                                <img src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F44c5084dfd9044d8594dbe767d47904499f63aac-396x118.png&w=64&q=75" alt="" />
+                            </a>
+                        </div>
+                        <div className='averagereview'>
+                            <p>Average Review - <span>4.2</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div className='d-flex flex-column flex-md-row align-items-center justify-content-end gap-md-5 mt-md-4 aradhanainnimg mt-3'>
+                   
+                        <img src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2Feea0d4e6c77ed76d04d5744c532b7cd676dbeecf-1024x683.jpg&w=384&q=75" alt="" />
+                    
+                    
+                        <img src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F2fcce6f01256c2d901e38ab6d7fdf5f6e87e04a5-1024x683.jpg&w=640&q=75" alt="" />
+                    
+                </div>
             </div>
           </div>
         </div>
+        {/* <Reviewform/> */}
+
+        
     </>
   )
 }

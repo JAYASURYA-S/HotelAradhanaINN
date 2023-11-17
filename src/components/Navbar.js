@@ -9,7 +9,6 @@ const Navbar = () => {
           <Link to="/"><img src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2Ffc71f93788141be9fd93a94f4d74e8272cbf88c9-240x200.png&w=128&q=75" alt="....." className="rounded-3"/></Link>
           <button
             className="navbar-toggler"
-            style={{backgroundColor:"white",outline:"none"}}
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -17,27 +16,27 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon" style={{backgroundColor:"white",outline:"none"}}></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse me-0" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item ps-4">
-                <Link to="/"  style={{textDecoration:"none",color:"white",fontSize:'25px'}}>Overview</Link>
+                <Link to="/" >Overview</Link>
               </li>
               <li className="nav-item ps-4">
-                <Link to="/rooms"  style={{textDecoration:"none",color:"white",fontSize:'25px'}}>Rooms</Link>
+                <Link to="/rooms"  >Rooms</Link>
               </li>
               <li className="nav-item ps-4">
-                <Link to="/restaurant"  style={{textDecoration:"none",color:"white",fontSize:'25px'}}>Restaurant</Link>
+                <Link to="/restaurant"  >Restaurant</Link>
               </li>
               <li className="nav-item ps-4">
-                <Link to="/conventionhall"  style={{textDecoration:"none",color:"white",fontSize:'25px'}}>Convention Hall</Link>
+                <Link to="/conventionhall"  >Convention Hall</Link>
               </li>
               <li className="nav-item ps-4">
-                <Link to="/gallery"  style={{textDecoration:"none",color:"white",fontSize:'25px'}}>Gallery</Link>
+                <Link to="/gallery"  >Gallery</Link>
               </li>
               <li className="nav-item ps-4 me-4">
-                <Link to="/events"  style={{textDecoration:"none",color:"white",fontSize:'25px'}}>Events</Link>
+                <Link to="/events"  >Events</Link>
               </li>
             </ul>
           </div>

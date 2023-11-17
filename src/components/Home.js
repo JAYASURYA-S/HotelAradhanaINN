@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 import Explore from "./Explore";
+import Reviewform from "./Reviewform";
+import Footer from "./Footer";
 
 const Home = () => {
 
@@ -45,7 +47,7 @@ const Home = () => {
         <Navbar />
         <div
           className="position-absolute"
-          style={{ top: "120px", marginLeft: "38px", color: "white" }}
+          style={{ top: "120px", marginLeft: "38px", color: "white",zIndex:"1" }}
         >
           <h3 className="display-5 fw-bold">
             Hotel
@@ -191,9 +193,9 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="d-flex flex-column restaurantakshaya">
+        <div className="container-fluid d-flex flex-column restaurantakshaya mt-5">
           <h3 className="text-center mb-5">Restaurants by Akshaya</h3>
-          <div className="d-flex flex-column flex-md-row justify-content-evenly">
+          <div className="d-flex flex-column w-100 flex-md-row justify-content-evenly">
             <div className="card restaurantakshayacard mb-5 mb-md-3">
               <img
                 src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2Fe29dda5e15461d2781bab2fb1eb4df3c6abc5a39-1024x768.jpg&w=640&q=75"
@@ -202,7 +204,7 @@ const Home = () => {
               />
               <div className="card-body p-3 px-4">
                 <h4 className="card-title mt-3">Garden Restaurant</h4>
-                <p className="card-text" style={{ fontSize: "18px" }}>
+                <p className="card-text" >
                   We have huge addition big green lawn with open restaurant
                   available, easily sit 100 pax in one time
                 </p>
@@ -216,7 +218,7 @@ const Home = () => {
               />
               <div className="card-body p-3 px-4">
                 <h4 className="card-title mt-3">Fine Dining</h4>
-                <p className="card-text" style={{ fontSize: "18px" }}>
+                <p className="card-text">
                   Akshaya restaurant 20 cover fine dinning with all the
                   cutleries& cracaries with view of green lawn area, you will
                   get all the Ala carte order in the same place.
@@ -227,7 +229,8 @@ const Home = () => {
         </div>
 
         <Explore/>
-        
+        <Reviewform/>
+        <Footer/>
       </div>
     </>
   );
