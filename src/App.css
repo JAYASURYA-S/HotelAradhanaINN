@@ -49,6 +49,16 @@
   color: white;
 }
 
+.booknowbtn:focus,
+.booknowbtn:active
+{
+  background-color: rgb(224, 158, 81) !important;
+  color: white !important;
+  outline: none !important;
+}
+
+
+
 .conventionhallimg
 {
   height: 470px;
@@ -86,18 +96,25 @@
 
 .restaurantakshayacard
 {
-  width: 400px;
-  border-radius: 30px;
-  height: 420px;
+  border: 1px solid rgb(202 206 211);
+  border-radius: 1.5em;
   overflow: hidden;
-  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .restaurantakshayacard img
 {
   width: 100%;
-  height: 50%;
+  height: 224px;
   object-fit: cover;
+  background-color: rgb(148 163 184);
+}
+
+.yercaud
+{
+  width: 95% !important;
 }
 
 .yercaud h5:hover
@@ -114,8 +131,8 @@
 
 .aboutYercaud h5
 {
-  font-size: 25px;
-  font-weight: 600;
+  font-size: 24px !important;
+  font-weight: 600 !important;
 }
 
 .aboutYercaud p
@@ -126,19 +143,41 @@
 
 .yercaudCardContainer
 {
-  width: 1250px;
+  /* width: 1250px; */
 }
 
 .yercaudcardImg
 {
+  height: auto;
   cursor: pointer;
 }
+
+.yercaudcardImg .karamadaiyurimg img
+{
+  height: 100% !important;
+  cursor: pointer;
+} 
 
 .yercaud h3
 {
   font-size: 30px;
   font-weight: 500;
 }
+
+
+.yercaud h5
+{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.yercaud .dark h5
+{
+  font-size: 20px !important;
+  font-weight: 500 !important;
+}
+
+
 
 .aboutplaces
 {
@@ -283,7 +322,6 @@
 }
 
 
-
 .eventheader img
 {
   width: 100%;
@@ -333,6 +371,241 @@
   margin-bottom: 500px;
 }
 
+.conventionhalldiv1 h3
+{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.conventionhalldiv1 p
+{
+  text-align: justify;
+  font-size: 18px;
+  max-width: 1000px;
+  margin-top: 30px;
+}
+
+.conventionhalldiv1 :nth-child(2)
+{
+  height: 500px;
+  width: 93%;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.conventionhalldiv2
+{
+  border: 1px solid rgba(202, 206, 211,1);
+}
+
+.roomsheader img
+{
+  object-fit: cover;
+  width: 100%;
+  height: 330px;
+  filter:brightness(60%);
+}
+
+.roomsbtns :nth-child(1)
+{
+  color: white;
+  padding: 12px 18px;
+  font-size: 18px;
+  background-color: rgb(208 174 113);
+  border-radius: 12px;
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1);
+  border-color: transparent;
+}
+
+.roomsbtns :nth-child(2)
+{
+  color: black;
+  padding: 12px 18px;
+  font-size: 18px;
+  background-color:white;
+  border-radius: 12px;
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1);
+  border: 1px solid  rgb(208 174 113);
+}
+
+.roomscard
+{
+  width: 100%;
+  gap: 32px;
+  display: grid;
+  grid-template-columns: repeat(1,minmax(0,1fr));
+}
+
+.roomscard a
+{
+  text-decoration: none;
+  color: inherit;
+}
+
+.h-50vh
+{
+  height: 50vh;
+}
+
+.roomamenities
+{
+  display: grid;
+  grid-template-columns: repeat(2 , minmax(0,1fr));
+}
+
+.thingtoknow
+{
+  display: grid;
+  grid-template-columns: repeat(1,minmax(0,1fr));
+  gap: 5rem;
+}
+
+.testmode
+{
+  display: block;
+}
+
+.test
+{
+  display: none;
+}
+
+.email-input
+{
+  border-radius: 0;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.phoneno-input
+{
+  border-radius: 0;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.PhoneNumberCountryCodeSelect-select optgroup
+{
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.PhoneNumberCountryCodeSelect-select optgroup option
+{
+  font-weight: normal;
+  display: block;
+  min-height: 1.2em;
+  font-size: 16px;
+  padding: 0 2px 1px;
+}
+
+.cardNumber-input
+{
+  border-radius: 0;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  padding-right: 28px;
+}
+
+.monthyear-input
+{
+  border-radius: 0;
+  border-bottom-left-radius: 8px;
+}
+
+.cvc-input
+{
+  border-radius: 0;
+  border-bottom-right-radius: 8px;
+  padding-right: 28px;
+}
+
+.nameOncard-input
+{
+  border-radius: 8px;
+}
+
+.galleryimgView
+{
+  display: grid;
+  grid-template-columns: repeat(1,minmax(0,1fr));
+}
+
+
+
+
+
+
+
+
+.b
+{
+  border: 2px solid;
+}
+
+
+.z-2
+{
+  z-index: 2;
+}
+
+.z-3
+{
+  z-index: 3;
+}
+
+.z-4
+{
+  z-index: 4;
+}
+
+.flex-basis-auto
+{
+  flex-basis: auto;
+}
+
+.align-items-flex-end
+{
+  align-items: flex-end;
+}
+
+.px-12
+{
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+
+.demo
+{
+  width: 100%;
+  border: 1px solid;
+  animation: transform 0.5s ease-in-out 0s 1;
+}
+
+.translatex
+{
+  transform: translateX(120px);
+}
+
+.translatey
+{
+  transform: translateY(20px);
+}
+
+/* .Header-businesLink-Label:hover
+{
+  left: 0 !important;
+  opacity: 1 !important;
+  position: absolute !important;
+  transform: translateZ(18px) !important;
+  transition: opacity .1s ease 0ms,transform .1s ease 0ms,-webkit-transform .1s ease 0ms !important;
+} */
+
+
+
 /* .card
 {
   margin: 2rem;
@@ -357,10 +630,17 @@
 .slidebtn
 {
   margin-left: 8px;
-  width: 3rem;
-  height: 3rem;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   background-color: rgb(224, 158, 81);
+  color: white;
+  border: none;
+}
+
+.slidebtn i
+{
+  font-size: 20px;
   color: white;
   border: none;
 }
@@ -382,6 +662,11 @@
     height: 700px;
   }
   
+  .h-300
+  {
+    height: 300px !important;
+  }
+
 
   .navbar-collapse
 {
@@ -437,7 +722,7 @@
  
   .yercaudcard
   {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
   }
   .aboutYercaud h5
@@ -453,7 +738,7 @@
   
   .yercaudcardImg
   {
-    height: 270px;
+    height: 100%;
   }
   .yercaud h3
   {
@@ -584,7 +869,6 @@
   width: 80%;
   height: 300px;
   margin: 0 auto;
-  /* border: 3px solid; */
 }
 
 .restaurantcarousel img
@@ -598,6 +882,13 @@
 {
   position: absolute !important;
   top: 30% !important;
+}
+
+.roombooking .carousel-control-prev-icon,
+.roombooking .carousel-control-next-icon
+{
+  position: absolute !important;
+  top: auto !important;
 }
 
 .gardenrestaurant h3
@@ -631,13 +922,533 @@
   margin-bottom: 20px;
 }
 
+.conventionhalldiv1 h3
+{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+
+.conventionhalldiv1 p
+{
+  width: 90%;
+  text-align: justify;
+  font-size: 16px;
+}
+
+.conventionhalldiv1 :nth-child(2)
+{
+  height: 300px;
+  width: 90%;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.conventionhalldiv2 :nth-child(1) ul
+{
+  font-size: 16px !important;
+}
+
+.conventionhalldiv2 :nth-child(1) h3
+{
+  font-size: 20px !important;
+  font-weight: 500;
+}
+
+.conventionhalldiv3 h3
+{
+  font-size: 25px !important;
+  font-weight: 500 !important;
+}
+
+
+.conventionhalldiv3 :nth-child(2)
+{
+  height: 190px !important;
+}
+
+.roomsheader img
+{
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+}
+
+.roomsheader :nth-child(2) 
+{
+  top: 60px !important;
+}
+
+.datecheck
+{
+  width: 100% !important;
+}
+
+.datecheck :nth-child(1)
+{
+  width: 100% !important;
+}
+
+.datecheck :nth-child(2) h6
+{
+  font-size: 11px !important;
+  width: fit-content !important;
+}
+
+.datecheck :nth-child(2) input
+{
+  width: fit-content !important;
+}
+
+.h-70vh
+{
+  height: 70vh;
+}
+
+.roomamenities
+{
+  display: grid;
+  grid-template-columns: repeat(1 , minmax(0,1fr));
+}
 
 }
+
+
+
+
+/*-----------------Media queries---------------*/
+
+@media (min-width: 640px) {
+
+  .newNavbar
+  {
+    padding: 0 16px !important;
+  }
+  }
+
+  @media (min-width: 1016px) {
+
+    .navbarbtncollapse
+    {
+      display: none !important;
+    }
+    }
+
+    @media (max-width: 1016px) {
+
+      .navbarbeforecollapse
+      {
+        display: none !important;
+      }
+      }
+
+      @media (min-width: 768px) {
+
+        .h-60vh
+        {
+          height: 60vh !important;
+        }
+        }
+      
+        @media (min-width: 1024px) {
+
+          .h-70vh
+          {
+            height: 70vh !important;
+          }
+          }
+    
+@media (min-width: 640px) {
+
+  .thingtoknow
+  {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+  }
+
+  @media (min-width: 768px) {
+
+    .roomimg
+    {
+      height: 300px !important;
+    }
+    }
+
+
+    @media (min-width: 600px) {
+
+      .display-none
+      {
+       display: none !important;
+      }
+      }
+
+      @media (max-width: 600px) {
+
+        .display-md-none
+        {
+         display: none !important;
+        }
+        }
+
+      
+
+
+      @media (min-width: 768px) {
+
+        .galleryimgView
+       {
+           display: grid;
+           grid-template-columns: repeat(2,minmax(0,1fr));
+       }
+        }
+
+        @media (min-width: 1024px) {
+
+          .galleryimgView
+         {
+             display: grid;
+             grid-template-columns: repeat(3,minmax(0,1fr));
+         }
+          }
+   
+
+      
+  @media (min-width: 576px) {
+
+    .Header-businesLink-Name
+    {
+      transition: opacity .25s ease .1s,transform .25s ease .1s,-webkit-transform .25s ease .1s;
+    }
+    }
 
 @media (max-width: 768px) {
   .slidebtn {
-    width: 2rem;
-    height: 2rem;
+    width: 32px;
+    height: 32px;
+    /* margin-right: 20px; */
+  }
+  .slidebtn i
+{
+  font-size: 15px;
+  color: white;
+  border: none;
+}
+}
+
+@media (min-width: 768px) {
+  .items-stretch {
+   align-items: stretch !important;
+   gap: 0 !important;
   }
 }
+
+
+@media (min-width: 768px) {
+  .roomscard
+{
+  width: 100%;
+  gap: 32px;
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+}
+}
+
+@media (min-width: 768px) {
+  .restaurantakshayacard
+{
+  width: 33% !important;
+}
+.thingtoknow
+{
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+}
+}
+
+@media (min-width: 768px) {
+  .text-md-lg
+{
+ font-size: 18px !important;
+}
+}
+
+
+@media (min-width: 768px) {
+  .text-md-2xl
+{
+  font-size: 24px !important;
+}
+}
+
+@media (max-width: 768px) {
+
+  .imgskeleton
+  {
+   width: 120px !important;
+   height: 120px !important;
+   border-radius: 9px !important;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .testmode
+  {
+    display: none !important;
+  }
+
+  .test
+  {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .ProductSummary-totalAmountContainer
+  {
+    justify-content: center !important;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .ProductSummary-totalAmountContainer
+  {
+    justify-content: flex-start !important;
+  }
+}
+
+
+@media (min-width: 992px) {
+
+  .product-summary
+  {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: left !important;
+    text-align: left !important;
+  }
+}
+
+
+@media (min-width: 992px) {
+
+  .ProductSummary-productImageContainer
+  {
+    height: 300px !important;
+    margin: 16px 0 !important;
+    order: 2 !important;
+    width: 300px !important;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .ProductSummary-Info
+  {
+    order: 1;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .ProductSummary-totalsread
+  {
+    padding-bottom: 4px;
+  }
+}
+
+
+
+
+@media (min-width: 992px) {
+
+  .ProductImage-image
+  {
+   max-height: 300px !important;
+   max-width: 300px !important;
+  }
+}
+
+
+
+@media (min-width: 992px) {
+
+  .App
+  {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 920px;
+    transform: translateY(max(48px,calc(50vh - 55%)));
+  }
+}
+
+
+
+
+@media (min-width: 992px) {
+
+  .App-Overview
+  {
+    margin-bottom: 0 !important;
+    width: 380px !important;
+    padding-bottom: 40px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-top: -90px !important;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .PaymentFormFixedHeightContainer
+  {
+   min-height: 400px !important;
+  }
+}
+
+
+@media (min-width: 992px) {
+
+  .App-Footer
+  {
+   margin: 12px 0 !important;
+   position: absolute !important;
+   left: 0 !important;
+   bottom: 40px !important;
+   background-color: inherit !important;
+   padding: 0 !important;
+   height: auto !important;
+   width: auto !important;
+   flex-direction: row !important;
+   align-items: baseline !important;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .Footer-PoweredBy
+  {
+   border-right: 1px solid hsla(0, 0%, 10%, 0.1) !important;
+   padding: 0 !important;
+   padding-right: 16px !important;
+   text-align: left !important;
+   width: auto !important;
+  }
+}
+
+
+@media (min-width: 992px) {
+
+  .Footer-Links
+  {
+   padding: 0 0 0 16px !important;
+  }
+}
+
+
+
+@media (max-width: 992px) {
+
+  .verticalline
+  {
+   display: none !important;
+  }
+}
+
+
+@media (max-width: 992px) {
+
+  .PaymentRequestOrHeader
+  {
+    display: none !important;
+  }
+}
+
+
+
+
+
+@media (min-width: 992px) {
+
+  .App-payment
+  {
+    margin-bottom: 0 !important;
+    width: 380px !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+
+
+
+@media (max-width: 992px) {
+
+  .PhoneNumberCountryCodeSelect-select
+  {
+    position: absolute;
+    left: -12px;
+    top: -4px;
+    padding-bottom: 44px;
+    padding-left: 20px;
+  }
+}
+
+
+@media (max-width: 992px) {
+
+  .Header
+  {
+    background-color: white !important;
+  }
+}
+
+
+
+@media (max-width: 992px) {
+
+  .Header-Content
+  {
+    margin: auto !important;
+    max-width: 380px !important;
+  }
+}
+
+
+
+
+@media (min-width: 1280px) {
+  .roomscard
+{
+  width: 100%;
+  gap: 32px;
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+}
+}
+
+@media (min-width: 1024px) {
+  .w-33
+{
+  width: 33% !important;
+}
+
+.thingtoknow
+{
+  display: grid;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+}
+}
+
+
+
 

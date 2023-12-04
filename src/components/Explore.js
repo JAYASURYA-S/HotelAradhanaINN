@@ -19,7 +19,7 @@ const Explore = () => {
 
   return (
     <>
-    <div className="d-flex flex-column yercaud mt-5 w-100">
+    <div className="d-flex flex-column yercaud mt-5" style={{width:"100%"}}>
           <h3
             className="text-center mb-5"
           >
@@ -27,10 +27,10 @@ const Explore = () => {
           </h3>
           <div className="d-flex justify-content-center justify-content-md-start ms-0 ms-md-5">
             <div>
-              <button onClick={()=>showAbout()} style={{backgroundColor:"transparent",border:"none"}}><h5 className="border-dark border-end pe-3">About Yercaud</h5></button>
+              <button onClick={()=>showAbout()} className={`${aboutYercaud && 'dark'}`} style={{backgroundColor:"transparent",border:"none"}}><h5 className="border-dark border-end pe-3">About Yercaud</h5></button>
             </div>
             <div>
-              <button onClick={()=>showPlaces()} style={{backgroundColor:"transparent",border:"none"}}><h5 className="ms-3">Nearby Places</h5></button>
+              <button onClick={()=>showPlaces()} className={`${nearbyPlaces && 'dark'}`} style={{backgroundColor:"transparent",border:"none"}}><h5 className="ms-3">Nearby Places</h5></button>
             </div>
           </div>
           <div className="d-flex flex-column yercaudCardContainer mt-5 ms-md-5">
@@ -39,8 +39,8 @@ const Explore = () => {
               <div className="card yercaudcard position-relative mb-3" style={{borderRadius:"20px",overflow:"hidden"}}>
                 <div className="row g-0 w-100">
                   <div className="col-md-6 yercaudcardImg fade-out position-relative" >
-                    <div className="w-100 h-100">
-                    <img src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F00b9c57037c880e47ffc762abf1cb9c9b8b21510-1200x614.jpg&w=1200&q=75" className="img-fluid rounded-start w-100 h-100"  alt="..." />
+                    <div className="karamadaiyurimg" style={{width:"100%",height:"100%"}}>
+                    <img src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F00b9c57037c880e47ffc762abf1cb9c9b8b21510-1200x614.jpg&w=1200&q=75" className="img-fluid rounded-start " style={{width:"100%",height:"100%"}}  alt="..." />
                     </div>
                     <div className="d-flex justify-content-between yercaudDesc position-absolute bottom-0 p-2" style={{color:"white"}}>
                         <h5>Karadaiyur View Point</h5>
@@ -118,8 +118,8 @@ const Explore = () => {
                 </div>
             </div>}
 
-            <div className='d-flex flex-column flex-md-row justify-content-between align-items-md-start gap-md-5' style={{marginTop:"70px"}}>
-                <div className='d-flex flex-column gap-2 w-100 mx-md-0'>
+            <div className='d-flex flex-column flex-md-row justify-content-between align-items-md-start gap-md-5' style={{marginTop:"70px",width:"100%"}}>
+                <div className='d-flex flex-column gap-2 mx-md-0' style={{width:"100%"}}>
                     <div className='d-flex flex-column aradhanainncontent gap-2'>
                         <h3>Hotel Aradhana Inn</h3>
                         <p>Hotel Aradhana Inn, tucked amidst dense tall silver oak trees and lush greenery on a picturesque hill overlooking the Lake in Yercaud, a small coffee plantation town, atop the Shevaroyan Hills, is an ideal place to those looking for a quiet and cosy accommodation. Poised on a hill overlooking the Big Lake, it commands a stunning view of the Lake and the surrounding plantations that grace the mountains. Hotel Aradhana Inn offers a choice of accommodations to match your needs - whether you need an inviting room for your work travels or a spacious suite for a family getaway, or cosy rooms for an exciting group get together or comfortable rooms to organize a conference, our accommodations have you covered.</p>

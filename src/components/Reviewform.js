@@ -36,8 +36,8 @@ const Reviewform = () => {
             <form className='d-flex flex-column form gap-4' style={{padding:"0 auto"}} onSubmit={handleSubmit}>
                 <h6 style={{fontSize:'20px',fontWeight:'500'}}>Leave a Review</h6>
                 <div className='d-flex flex-column gap-4'>
-                    <input type="text" placeholder='Enter your name' onChange={(e)=>setName(e.target.value)}/>
-                    <textarea name="review" id="review" rows="2" placeholder='Enter your review' onChange={(e)=>setReview(e.target.value)}></textarea>
+                    <input style={{fontSize:'16px',border:"1px solid rgba(0,0,0,0.5)",padding:"8px"}} type="text" placeholder='Enter your name' onChange={(e)=>setName(e.target.value)}/>
+                    <textarea style={{border:"1px solid rgba(0,0,0,0.5)",padding:"10px"}} name="review" id="review" rows="2" placeholder='Enter your review' onChange={(e)=>setReview(e.target.value)}></textarea>
                 </div>
                 <button type='submit'>Submit</button>
             </form>

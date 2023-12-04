@@ -4,15 +4,23 @@ import { Link } from "react-router-dom";
 import Explore from "./Explore";
 import Reviewform from "./Reviewform";
 import Footer from "./Footer";
+import Imageslider from "./Imageslider";
+import Demo from "./Demo";
 
 const Home = () => {
+  const [showdropdown, setShowdropdown] = useState(false);
+
+  const dropdown = () => {
+    setShowdropdown(!showdropdown);
+  };
 
   return (
     <>
-      <div
+    <div
         id="carouselExampleSlidesOnly"
         className="carousel slide position-relative"
         data-bs-ride="carousel"
+        style={{width:"100%"}}
       >
         <div className="carousel-inner">
           <div className="carousel-item active">
@@ -67,94 +75,15 @@ const Home = () => {
           </Link>
         </div>
         <div>
-          <div className="mt-5">
+          <div className="" style={{margin:"80px 0",padding:"0 20px"}}>
             <div className="position-relative">
-              <h3>Our Rooms</h3>
-              <p>Comfy and Luxury rooms for all your needs</p>
-              <div className="position-absolute top-0 end-0 me-3">
-                <button className="slidebtn">
-                  <i className="fa fa-thin fa-arrow-left"></i>
-                </button>
-                <button className="slidebtn">
-                  <i className="fa fa-thin fa-arrow-right"></i>
-                </button>
-              </div>
-              <div className="row row-cols-1 row-cols-md-3 g-4">
-                <div className="col">
-                  <div className="card" style={{ width: "25rem" }}>
-                    <img
-                      src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F2f3413618ad1e3d8c9a187ab01fe5468b1777235-5616x3744.jpg&w=640&q=75"
-                      className="card-img-top"
-                      alt="..."
-                    />
-                    <div className="card-body position-absolute bottom-0  text-white">
-                      <p className="card-text fw-bold fs-5">
-                        Villas <br /> <span className="fw-light">6 People</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div className="card" style={{ width: "25rem" }}>
-                    <img
-                      src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F64219cd5f1f554d95e30427536700303e6520059-5472x3648.jpg&w=640&q=75"
-                      className="card-img-top"
-                      alt="..."
-                    />
-                    <div className="card-body position-absolute bottom-0  text-white">
-                      <p className="card-text fw-bold fs-5">
-                        Suite Room
-                        <br /> <span className="fw-light">2 People</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div className="card" style={{ width: "25rem" }}>
-                    <img
-                      src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F7a7c75bce14b8cb942a951b73d6f1b37581aee51-1024x683.jpg&w=640&q=75"
-                      className="card-img-top"
-                      alt="..."
-                    />
-                    <div className="card-body position-absolute bottom-0  text-white">
-                      <p className="card-text fw-bold fs-5">
-                        Deluxe with Balcony Room <br />{" "}
-                        <span className="fw-light">2 People</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div className="card" style={{ width: "25rem" }}>
-                    <img
-                      src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F825ec47f4e47ac800327e6108294a9580901d8bc-1280x853.jpg&w=640&q=75"
-                      className="card-img-top"
-                      alt="..."
-                    />
-                    <div className="card-body position-absolute bottom-0  text-white">
-                      <p className="card-text fw-bold fs-5">
-                        Deluxe Room <br />{" "}
-                        <span className="fw-light">2 People</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div className="card" style={{ width: "25rem" }}>
-                    <img
-                      src="https://www.hotelaradhanainn.in/_next/image?url=&w=640&q=75"
-                      className="card-img-top"
-                      alt="..."
-                    />
-                    <div className="card-body position-absolute bottom-0  text-white">
-                      <p className="card-text fw-bold fs-5">
-                        Normal Room <br />{" "}
-                        <span className="fw-light">2 People</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <h2 style={{fontSize:"30px",fontWeight:"600"}}>Our Rooms</h2>
+              <p style={{fontSize:"20px",fontWeight:"400"}}>Comfy and Luxury rooms for all your needs</p>
+
+
+              <Imageslider />            
+
+              
             </div>
           </div>
         </div>
@@ -167,7 +96,7 @@ const Home = () => {
           />
           <div className="conventionhallcontent">
             <h2 className="fw-bold">Multi Purpose Convention Hall</h2>
-            <p style={{ fontWeight: "400" }}>
+            <p style={{ fontWeight: "400",textAlign:"justify" }}>
               At LAKE VIEW SENATE HALL, we pride ourselves in offering
               custom-crafted meetings and events to delight any palate. We
               believe that providing responsive and engaging service will ensure
@@ -195,16 +124,16 @@ const Home = () => {
 
         <div className="container-fluid d-flex flex-column restaurantakshaya mt-5">
           <h3 className="text-center mb-5">Restaurants by Akshaya</h3>
-          <div className="d-flex flex-column w-100 flex-md-row justify-content-evenly">
+          <div className="d-flex flex-column flex-md-row justify-content-evenly items-stretch" style={{width:"100%",rowGap:"48px"}}>
             <div className="card restaurantakshayacard mb-5 mb-md-3">
               <img
-                src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2Fe29dda5e15461d2781bab2fb1eb4df3c6abc5a39-1024x768.jpg&w=640&q=75"
+                src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F6d9caf9e849e50bf5007c8ebdfe097df7d3543c9-6960x4640.jpg&w=640&q=75"
                 className="card-img-top"
                 alt="..."
               />
-              <div className="card-body p-3 px-4">
-                <h4 className="card-title mt-3">Garden Restaurant</h4>
-                <p className="card-text" >
+              <div className="card-body d-flex flex-column align-items-center" style={{padding:"32px"}}>
+                <h4 className="card-title mt-3 text-md-2xl" style={{color:"rgb(46 37 21)",fontWeight:"600",fontSize:"20px"}}>Garden Restaurant</h4>
+                <p className="card-text text-md-lg" style={{color:"rgb(46 37 21)",fontWeight:"400",fontSize:"16px"}}>
                   We have huge addition big green lawn with open restaurant
                   available, easily sit 100 pax in one time
                 </p>
@@ -212,13 +141,13 @@ const Home = () => {
             </div>
             <div className="card restaurantakshayacard mb-5 mb-md-3">
               <img
-                src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F268cda7e4fff5729469de54df5f346a06ecadb9f-933x602.png&w=640&q=75"
+                src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F441a9c8b5e15b42b86136f42539add8dd76ae1ce-6960x4640.jpg&w=640&q=75"
                 className="card-img-top"
                 alt="..."
               />
-              <div className="card-body p-3 px-4">
-                <h4 className="card-title mt-3">Fine Dining</h4>
-                <p className="card-text">
+              <div className="card-body d-flex flex-column align-items-center" style={{padding:"32px"}}>
+                <h4 className="card-title mt-3 text-md-2xl" style={{color:"rgb(46 37 21)",fontWeight:"600",fontSize:"20px"}}>Fine Dining</h4>
+                <p className="card-text text-md-lg" style={{color:"rgb(46 37 21)",fontWeight:"400",fontSize:"16px"}}>
                   Akshaya restaurant 20 cover fine dinning with all the
                   cutleries& cracaries with view of green lawn area, you will
                   get all the Ala carte order in the same place.

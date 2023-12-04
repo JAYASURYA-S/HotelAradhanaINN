@@ -8,7 +8,7 @@ const Restaurant = () => {
       <div className="position-relative">
         <div
           className="position-relative eventheader restaurantheader"
-          style={{ height: "50vh", border: "3px solid" }}
+          style={{ height: "50vh" }}
         >
           <img
             src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2Fc091b41f31c2b790dfb4a57b2920cb660baad878-1024x485.jpg&w=1920&q=75"
@@ -56,10 +56,10 @@ const Restaurant = () => {
                     </div>
                     <div className="carousel-inner">
                       <div className="carousel-item active">
-                        <img src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F82d4fa40a814568db12e01e32ebb9e386aea7cae-1024x613.jpg&w=1920&q=75" className="d-block w-100" alt="..." />
+                        <img src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F82d4fa40a814568db12e01e32ebb9e386aea7cae-1024x613.jpg&w=1920&q=75" className="d-block w-100" style={{objectFit:"cover"}} alt="..." />
                       </div>
                       <div className="carousel-item">
-                        <img src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2Fc9c9f5addd3ea79da8a3387d7a75c842729e2c37-1024x485.jpg&w=1920&q=75" className="d-block w-100" alt="..." />
+                        <img src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2Fc9c9f5addd3ea79da8a3387d7a75c842729e2c37-1024x485.jpg&w=1920&q=75" className="d-block w-100" style={{objectFit:"cover"}} alt="..." />
                       </div>
                     </div>
                     <button
