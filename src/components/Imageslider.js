@@ -77,7 +77,7 @@ const Imageslider = () => {
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
+          dots: false
         }
       },
       {
@@ -101,23 +101,6 @@ const Imageslider = () => {
 
   return (
     <>
-      {/* <div className="slider-container">
-        <div className="slider-wrapper">
-        <div className="position-absolute top-0 end-0 me-3">
-                <button className="slidebtn" onClick={prevSlide}>
-                  <i className="fa fa-thin fa-arrow-left"></i>
-                </button>
-                <button className="slidebtn" onClick={nextSlide}>
-                  <i className="fa fa-thin fa-arrow-right"></i>
-                </button>
-              </div>
-            <div className="image-list">
-                {images.map((image,index)=>{
-                    return <img key={index} src={image} alt="" className="image-item"/>
-                })}
-            </div>
-        </div>
-      </div> */}
 
 
        <div className="imagesliderContainer" style={{width:"100%"}}>
@@ -136,40 +119,6 @@ const Imageslider = () => {
         ))}
 
         
-         {/* <div className="ourRoomsdetailsimg">
-           <img src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F2f3413618ad1e3d8c9a187ab01fe5468b1777235-5616x3744.jpg&w=640&q=75" alt="" style={{width:"100%",height:"100%",objectFit:"cover"}}/>
-           <div className="ourRoomsdetails">
-            <h3>Villas</h3>
-            <p>6 People</p>
-           </div>
-         </div>
-         <div className="ourRoomsdetailsimg">
-           <img src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F5246b45fda14b52e3d119e3573fe444152ca57aa-6960x4640.jpg&w=640&q=75" alt="" style={{width:"100%",height:"100%",objectFit:"cover"}}/>
-           <div className="ourRoomsdetails">
-            <h3>Suite Room</h3>
-            <p>2 People</p>
-           </div>
-         </div>
-         <div className="ourRoomsdetailsimg">
-           <img src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F868f5745dde4cd414f000fe8688e5c23dc063058-6960x4640.jpg&w=640&q=75" alt="" style={{width:"100%",height:"100%",objectFit:"cover"}}/>
-           <div className="ourRoomsdetails">
-            <h3>Deluxe with Balcony Room</h3>
-            <p>2 People</p>
-           </div>
-         </div>
-         <div className="ourRoomsdetailsimg">
-           <img src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2F0cfa6427d5910ee28b6bd7315555b36eb549cc94-6960x4640.jpg&w=640&q=75" alt="" style={{width:"100%",height:"100%",objectFit:"cover"}}/>
-           <div className="ourRoomsdetails">
-            <h3>Deluxe Room</h3>
-            <p>2 People</p>
-           </div>
-         </div>
-         <div className="ourRoomsdetailsimg">
-           <img src="https://www.hotelaradhanainn.in/_next/image?url=&w=640&q=75" alt="" style={{width:"100%",height:"100%",objectFit:"cover"}}/>
-           <div className="ourRoomsdetails">
-            <h3>People</h3>
-           </div>
-         </div> */}
        </Slider>
      </div>
 

@@ -118,7 +118,7 @@ const Explore = () => {
                 </div>
             </div>}
 
-            <div className='d-flex flex-column flex-md-row justify-content-between align-items-md-start gap-md-5' style={{marginTop:"70px",width:"100%"}}>
+            <div className='d-flex flex-column flex-md-row justify-content-between align-items-md-start ' style={{marginTop:"70px",width:"100%"}}>
                 <div className='d-flex flex-column gap-2 mx-md-0' style={{width:"100%"}}>
                     <div className='d-flex flex-column aradhanainncontent gap-2'>
                         <h3>Hotel Aradhana Inn</h3>
@@ -145,7 +145,7 @@ const Explore = () => {
                         </div>
                     </div>
                 </div>
-                <div className='d-flex flex-column flex-md-row align-items-center justify-content-end gap-md-5 mt-md-4 aradhanainnimg mt-3'>
+                <div className='d-flex flex-column flex-lg-row align-items-center justify-content-end gap-md-5 mt-md-4 aradhanainnimg mt-3' style={{width:"100%"}}>
                    
                         <img src="https://www.hotelaradhanainn.in/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fso7v7vzh%2Fproduction%2Feea0d4e6c77ed76d04d5744c532b7cd676dbeecf-1024x683.jpg&w=384&q=75" alt="" />
                     
@@ -156,7 +156,6 @@ const Explore = () => {
             </div>
           </div>
         </div>
-        {/* <Reviewform/> */}
 
         
     </>
