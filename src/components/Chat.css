@@ -186,14 +186,10 @@ svg {
   color: rgb(255, 255, 255);
 }
 
-#button button i.for-opened {
-  /* transform: translateX(10px); */
-}
 
 #button button i.type1.for-opened svg {
   width: 22px;
   height: 22px;
-  /* margin-left: 3px; */
 }
 
 .chat {
