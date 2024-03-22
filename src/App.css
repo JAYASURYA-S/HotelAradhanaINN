@@ -1,6 +1,7 @@
 .carousel-item
 {
   height: 70vh;
+  width: 100vw;
 }
 
 .carousel-image
